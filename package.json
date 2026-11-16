@@ -1,0 +1,65 @@
+{
+  "name": "dsh-media-studio",
+  "version": "1.0.0",
+  "description": "Uses DSH-configured image models and renders generated images inline in the conversation",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./tools": "./tools.js",
+    "./tools/locale/*.json": "./locale/*.json",
+    "./tools/icon": "./icon.svg",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test image-paths.test.js tools.test.js config.test.js"
+  },
+  "files": [
+    "index.js",
+    "tools.js",
+    "image-paths.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "docs/",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-tool",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": "Siriuskangkang",
+  "homepage": "https://github.com/Siriuskangkang/dsh-media-studio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siriuskangkang/dsh-media-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Siriuskangkang/dsh-media-studio/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "image-generation"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.2-rc.3 <0.3.0"
+  }
+}

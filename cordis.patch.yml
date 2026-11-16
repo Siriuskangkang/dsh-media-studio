@@ -1,0 +1,10 @@
+# Profile-wide image generation and authenticated conversation previews.
+- insert:
+    - id: media-studio
+      name: dsh-media-studio
+      config:
+        mediaDirectory: !!js dshHomePath('media-studio/files')
+    - id: media-studio-tools
+      name: dsh-media-studio/tools
+      config:
+        imageProvider: image

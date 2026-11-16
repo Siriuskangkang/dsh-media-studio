@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Media Studio">
+  <defs>
+    <linearGradient id="dmsGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.55" stop-color="#2f8bff"/>
+      <stop offset="1" stop-color="#22c1a1"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#dmsGradient)"/>
+  <path d="M20 24.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0Z" fill="#ffffff" opacity="0.92"/>
+  <path d="M17 45.5 27.5 33l7.5 9 5-6 7 9.5H17Z" fill="#ffffff" opacity="0.95"/>
+  <path d="M41.5 15.5v9M37 20h9" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+</svg>

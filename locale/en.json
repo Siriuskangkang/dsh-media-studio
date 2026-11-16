@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Media Studio",
+    "description": "Generate 1–4 images from a configured OpenAI Images-compatible DSH provider. Ask for an image in chat; results are saved in the workspace and shown inline. Configure the image provider and credentials first. Prompts are sent to that provider and may incur charges. No video generation or reference-image upload."
+  }
+}
